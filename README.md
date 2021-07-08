@@ -1,9 +1,9 @@
 
-# Chakra Zulu
+# Prana Zulu
 
 ## About
 
-*Chakra Zulu* was developed to assist anyone, regardless of ecperience level, with maintaining and/or restoring balance & harmony to their subtle body energies.  
+*Prana Zulu* was developed to assist anyone, regardless of ecperience level, with maintaining and/or restoring balance & harmony to their subtle body energies.  
 
 ## Photos
 ### Wireframe
