@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    border-bottom: 1px solid transparent;
+    background-color: black;
+    height: 67px;
+}
+
+h1 {
+    color: #9b0cca;
+}
+
+.header_logo {
+    object-fit: contain;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header_icon {
+    color:#9b0cca;
+    padding: 20px;
+}

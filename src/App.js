@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "./logo.svg";
 import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 // import Alignment from "./components/Alignment";
 import Root from "./components/Root";
 import Sacral from "./components/Sacral";
@@ -12,19 +12,26 @@ import Crown from "./components/Crown";
 import "./App.css";
 
 function App() {
-  const [data, setData] = React.useState(null);
+  // const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
+  // React.useEffect(() => {
+  //   fetch("/api")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // }, []);
 
   return (
     <div className="App">
-
-      < Header />
-      <div className="container">
+      <header>
+          < Header />
+      <nav>
+          < Navbar />
+      </nav> 
+      </header>
+    <div className="container">
+      
+     {/* backgorundImage: `url("https://imgur.com/PACfife.jpg")` */}
+        
         <Crown />
         <ThirdEye />
         <Throat />
@@ -32,6 +39,7 @@ function App() {
         <SolarPlexus />
         <Sacral />
         <Root />
+          
       </div>
       {/* <Alignment /> */}
     </div>
