@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+// import ChakraCards from "./components/ChakraCards";
 // import Alignment from "./components/Alignment";
 import Root from "./components/Root";
 import Sacral from "./components/Sacral";
@@ -12,13 +13,13 @@ import Crown from "./components/Crown";
 import "./App.css";
 
 function App() {
-  // const [data, setData] = React.useState(null);
+  const [chakras, setData] = React.useState(null);
 
-  // React.useEffect(() => {
-  //   fetch("/api")
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data.message));
-  // }, []);
+  React.useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
 
   return (
     <div className="App">
@@ -29,9 +30,11 @@ function App() {
       </nav> 
       </header>
     <div className="container">
-      
-     {/* backgorundImage: `url("https://imgur.com/PACfife.jpg")` */}
-        
+    <div style={{ 
+      backgroundImage: `url("https://imgur.com/.jpg")` 
+    }}>
+      <img src="https://imgur.com/j6O50Ze.jpg" height="300px" width="auto"></img>        
+      {/* <ChakraCards /> */}
         <Crown />
         <ThirdEye />
         <Throat />
@@ -39,6 +42,7 @@ function App() {
         <SolarPlexus />
         <Sacral />
         <Root />
+    </div>  
           
       </div>
       {/* <Alignment /> */}
